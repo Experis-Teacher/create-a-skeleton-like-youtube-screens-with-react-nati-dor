@@ -42,7 +42,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-         {/* {
+         {
           this.state.videos.map((list, index) => {
             return (
               <section key={index}>
@@ -51,8 +51,8 @@ class App extends Component {
                 <hr />
               </section>
             );
-          })} */}
-          <SkeletonCard/>
+          })}
+          <SkeletonCard props={this.state.videos}/>
       </div>
     );
   }
